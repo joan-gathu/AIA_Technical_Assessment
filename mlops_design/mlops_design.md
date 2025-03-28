@@ -6,6 +6,8 @@ A well-structured MLOps pipeline consists of several key components. The **data 
 
 The **model training and experimentation** phase involves training machine learning models using automated pipelines. Hyperparameter tuning techniques such as Optuna or Ray Tune can be leveraged to optimize performance, while experiment tracking tools like MLflow or Weights & Biases ensure reproducibility. The trained models are then packaged into Docker containers, allowing for seamless deployment across different environments.
 
+![MLOps Architecture](mlops-architecture.png)
+
 For **model deployment**, serving strategies such as REST APIs (via FastAPI or Flask) or cloud-based solutions like AWS SageMaker and Vertex AI are employed. To enhance scalability, Kubernetes-based deployment with auto-scaling mechanisms ensures efficient resource utilization. The system also incorporates robust monitoring and logging solutions, including Prometheus, Grafana, and ELK Stack, to track model performance and identify potential issues.
 
 To maintain reliability, **CI/CD pipelines** automate the testing and deployment of new models. Version control systems like GitHub Actions, Jenkins, or GitLab CI/CD ensure that each model update undergoes rigorous validation before being rolled out to production. By implementing a microservices-based architecture, different components of the MLOps pipeline remain modular and scalable, supporting rapid iteration and deployment.
